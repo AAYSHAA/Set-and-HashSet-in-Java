@@ -3,28 +3,34 @@
  Sets and Hash Sets in Java
  
 1. Introduction to Sets
+   
 •	Definition: Sets are part of Java's collections framework, providing a way to group like objects together.
 •	Similarity to Lists: Operations like adding, checking containment, and removal are similar to ArrayLists.
 
 3. Creating a Set
+   
 •	Declaration: Set<Type> setName = new HashSet<>();
 •	Initialization: Sets cannot be directly instantiated as they are interfaces. We use implementations like HashSet.
 •	Interface Aspect: Sets are interfaces, and you need to use a class that implements the Set interface.
 
 5. Adding Elements to a Set
+   
 •	Use add() method to add elements to the set.
 •	Sets do not allow duplicate elements. If you try to add a duplicate, it won't be added.
 
 7. Removing Elements from a Set
+   
 •	Use remove() method to remove elements.
 •	No direct removal by index, as sets don't maintain order.
 •	clear() method removes all elements from the set.
 
 9. Set Characteristics
+    
 •	No Order Guarantee: Sets do not guarantee the order of elements.
 •	No Duplicates: Sets automatically handle duplicates; attempting to add a duplicate has no effect.
 
 11. Set Operations
+    
 •	size(): Get the size of the set.
 •	contains(element): Check if the set contains a specific element.
 •	isEmpty(): Check if the set is empty.
@@ -35,18 +41,22 @@
 •	Iterator: Using Iterator for more explicit control.
 
 15. Use Cases for Sets
+    
 •	Perfect for situations where a collection is needed without duplicates, and the order doesn't matter.
 •	Efficient for removing duplicates from a list.
 
 17. Other Set Implementations
+    
 1.	TreeSet:
 •	Orders elements based on their natural ordering.
 •	Slower than HashSet but maintains order.
-2.	LinkedHashSet:
+
+3.	LinkedHashSet:
 •	Maintains insertion order.
 •	Faster than TreeSet but slower than HashSet.
 
  Performance Considerations
+
 •	HashSet: Extremely fast for add, remove, and lookup operations (constant time).
 •	TreeSet: Slower due to maintaining order.
 •	LinkedHashSet: Faster than TreeSet but slower than HashSet.
